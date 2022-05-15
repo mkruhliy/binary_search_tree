@@ -406,5 +406,5 @@ class LinkedBST(AbstractCollection):
 
 
 if __name__ == '__main__':
-    bt = LinkedBST()
-    bt.demo_bst('words.txt')
+    bst = LinkedBST()
+    bst.demo_bst('words.txt')

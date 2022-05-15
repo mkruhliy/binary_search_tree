@@ -335,3 +335,13 @@ class LinkedBST(AbstractCollection):
         :rtype:
         """
         return None
+
+
+if __name__ == '__main__':
+    bst = LinkedBST()
+    for i in range(10):
+        bst.add(i)
+    print(bst)
+    bst.rebalance()
+    print(bst)
+
