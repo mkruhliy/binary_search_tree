@@ -338,10 +338,10 @@ class LinkedBST(AbstractCollection):
         :return:
         :rtype:
         """
-        
+
         with open(path, 'r') as file:
             data = file.read().splitlines()
-        
+
         def first(lst):
             words = lst.copy()
             random.shuffle(words)
@@ -352,7 +352,7 @@ class LinkedBST(AbstractCollection):
             finnish = time.time() - start
             print('1: {}'.format(finnish))
 
-        def second(lst): # прочекай рекурсію на компі
+        def second(lst):
             words = lst.copy()
             random.shuffle(words)
             words = words[:10000]
@@ -366,7 +366,7 @@ class LinkedBST(AbstractCollection):
                 bst.find(i)
             finnish = time.time() - start
             print('2: {}'.format(finnish))
-        
+
         def third(lst):
             words = lst.copy()
             random.shuffle(words)
@@ -382,7 +382,7 @@ class LinkedBST(AbstractCollection):
                 bst.find(i)
             finnish = time.time() - start
             print('3: {}'.format(finnish))
-        
+
         def fourth(lst):
             words = lst.copy()
             random.shuffle(words)
